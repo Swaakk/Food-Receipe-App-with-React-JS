@@ -3,8 +3,12 @@ import React from 'react'
 function Hero() {
   return (
     <div>
-        <div className="hero_container">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
+        <div className="hero">
+            <img src="https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" />
+            <div className='hero-content'>
+                <h2>Its all about good food and taste</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore repellendus nesciunt minus autem animi temporibus suscipit saepe quam.</p>
+            </div>
         </div>
     </div>
   )

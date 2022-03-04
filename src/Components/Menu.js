@@ -2,6 +2,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import Hero from './Hero'
+import SpecialDishes from './SpecialDishes'
 
 function Menu() {
 
@@ -23,6 +24,7 @@ function Menu() {
   return (
     <div>
        <Hero/>
+       <SpecialDishes specMenu={menu}/>
         
     </div>
   )
