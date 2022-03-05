@@ -1,15 +1,17 @@
-import React from 'react'
+ import React from 'react'
 
 function SpecialDishes(props) {
-    const specMenu = props.specMenu.map((menuItem)=>{
-        return(
+    const valueSpec = 8;
+    const specMenu = props.specMenu.map((menuItem,index)=>{
+        if(index < valueSpec){
+            return(
             
                 <li>
                     <h4>{menuItem.strMeal}</h4>
                     <img src={menuItem.strMealThumb} alt="" />
                 </li>
-            
         )
+        }
     })
 
   return (
