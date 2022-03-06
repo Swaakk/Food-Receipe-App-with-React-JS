@@ -10,8 +10,10 @@ function SpecialDishes(props) {
                     <h4>{menuItem.strMeal}</h4>
                     <img src={menuItem.strMealThumb} alt="" />
                 </li>
+
         )
         }
+       
     })
 
   return (
