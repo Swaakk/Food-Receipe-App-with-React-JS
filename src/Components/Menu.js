@@ -1,7 +1,7 @@
-/* eslint-disable react-hooks/exhaustive-deps */
+
 import React from 'react'
 import { useState,useEffect } from 'react'
-import FilteredDishes from './FilteredDishes'
+
 import Hero from './Hero'
 import SpecialDishes from './SpecialDishes'
 
@@ -14,6 +14,7 @@ function Menu() {
         const API_URL = "https://www.themealdb.com/api/json/v1/1/search.php?f=a"
         let response = await fetch(API_URL)
         let data = await response.json()
+        console.log("heu",data.meals);
         setMenu(data.meals)
         
     }
@@ -40,7 +41,7 @@ function Menu() {
     <div>
        <Hero/>
        <SpecialDishes specMenu={menu}/>
-       <FilteredDishes allMenuCategory={menuCategory} />
+       
         
     </div>
   )
